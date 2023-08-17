@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <!-- font awesome! -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google fonts -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./images/logo.svg" alt="app logo" />
+
+      <div class="card">
+        <div class="bill-container">
+          <h3>Bill</h3>
+          <div class="bill-total">
+            <i class="fa-solid fa-dollar-sign"></i>$142.55
+          </div>
+        </div>
+
+        <div class="select-container">
+          <h3 class="header" id="tip">Select Tip %</h3>
+          <div class="button-container">
+           <div class="item" id="item1">5%</div>
+           <div class="item" id="item2">10%</div> 
+           <div class="item" id="item3">15%</div> 
+           <div class="item" id="item4">25%</div> 
+           <div class="item" id="item5">50% </div>
+           <div class="item" id="item-custom">Custom</div>
+        </div>
+
+        <div class="customers-container">
+          <h3>Number of People</h3>
+
+          <div class="dropdown">
+            <i class="fa-solid fa-user"></i>
+            <div class="title pointerCursor">Select an Option</div>
+            <div class="customers pointerCursor hide">
+              <div class="option" id="option1">1</div>
+              <div class="option" id="option2">2</div>
+              <div class="option" id="option3">3</div>
+              <div class="option" id="option4">4</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="total-container">
+          <h3>Tip Amount</h3>
+          <p>/ person</p>
+
+          <h3>Total</h3>
+          <p>/ person</p>
+
+          <button>Reset</button>
+        </div>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </div>
+
+    <!-- javascript -->
+    <script src="./main.js"></script>
+  </body>
+</html>
+
+<!-- https://www.freecodecamp.org/news/build-and-validate-beautiful-forms-with-vanilla-html-css-js/ -->
+
+<!-- https://www.freecodecamp.org/news/how-to-create-a-dropdown-menu-with-css-and-javascript/ -->

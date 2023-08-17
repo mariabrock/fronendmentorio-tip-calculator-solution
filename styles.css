@@ -1,0 +1,93 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-family: 'Space Mono', monospace;
+  background-color: hsl(185, 41%, 84%);
+}
+
+.container {
+  row-gap:  25px;
+  justify-items : stretch;
+  align-items: start;
+}
+
+img {
+  max-width: 100px;
+  padding: 3rem;
+  margin-left: 10rem;
+}
+
+.card {
+  display: grid;
+  grid-template-areas: "bill"
+  "select"
+  "customers"
+  "total";
+  grid-template-columns: 1fr;
+  row-gap:  25px;
+  justify-items : center;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.bill-container {
+  grid-area: "bill";
+}
+
+.select-container {
+  grid-area: "select";
+}
+
+.button-container {
+  display: grid;
+  grid-template-areas:
+  "five" "ten"
+  "fifteen" "twenty"
+  "fifty" "custom";
+  grid-template-columns:
+  1fr 1fr;
+}
+
+.item1 {
+  grid-area: "five";
+}
+
+.item2 {
+  grid-area: "ten";
+}
+
+.item3 {
+  grid-area: "fifteen";
+}
+
+.item4 {
+  grid-area: "twenty";
+}
+
+.item5 {
+  grid-area: "fifty";
+}
+
+.item-custom {
+  grid-area: "custom";
+}
+
+.customers-container {
+  grid-area: "customers";
+}
+
+.total-container {
+  grid-area: "total";
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
