@@ -38,6 +38,7 @@ img {
 .bill-container {
   grid-area: "bill";
   margin: 1rem;
+  padding-top: 1rem;
 }
 
 .select-container {
@@ -146,6 +147,7 @@ button {
   grid-area: "price";
   color: hsl(172, 67%, 45%);
   font-size: x-large;
+  padding-left: 5rem;
 }
 
 #icon {
