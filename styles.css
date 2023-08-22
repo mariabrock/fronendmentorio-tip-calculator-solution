@@ -21,7 +21,8 @@ img {
 
 .card {
   display: grid;
-  grid-template-areas: "bill"
+  grid-template-areas: 
+  "bill"
   "select"
   "customers"
   "total";
@@ -36,10 +37,22 @@ img {
 
 .bill-container {
   grid-area: "bill";
+  margin: 1rem;
 }
 
 .select-container {
   grid-area: "select";
+  margin: 1rem;
+}
+
+.customers-container {
+  grid-area: "customers";
+  padding: 1rem;
+}
+
+.total-container {
+  grid-area: "total";
+  margin: .5rem;
 }
 
 .button-container {
@@ -76,6 +89,10 @@ button {
   color: hsl(183, 100%, 15%);
 }
 
+.custom {
+  color: hsl(183, 100%, 15%);
+}
+
 .item1 {
   grid-area: "five";
 }
@@ -106,6 +123,29 @@ button {
 
 .total-container {
   grid-area: "total";
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.grid {
+  display:  grid;
+  grid-template-areas: 
+  "header" "price"
+  "header" "price";
+  grid-template-columns: 1fr 1fr;
+  row-gap:  10px;
+  column-gap:  10px;
+}
+
+.total-text {
+  grid-area: "header";
+}
+
+.amount {
+  grid-area: "price";
+  color: hsl(172, 67%, 45%);
+  font-size: x-large;
 }
 
 #icon {
@@ -113,13 +153,14 @@ button {
   padding: 10px;
   min-width: 40px;
   color:  hsl(184, 14%, 56%);
+  font-size: medium;
 }
 
 .input-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-width: 500px;
+  width: 325px;
   padding: 10px;
   background-color: hsl(189, 41%, 97%);
   border: 0;
@@ -129,15 +170,35 @@ button {
 h2 {
   margin: 0;
   color: hsl(183, 100%, 15%);
+  font-size: x-large;
 }
 
 h3 {
+  margin: 0.25rem;
+}
+
+.header1 {
   color: hsl(186, 14%, 43%);
+}
+
+.header2 {
+  color: hsl(189, 41%, 97%);
+}
+
+.subtext {
+  color: hsl(184, 14%, 56%);
+  margin: 0;
+}
+
+.btn-reset {
+  background-color: hsl(172, 67%, 45%);
+  width: 300px;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 5rem;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);

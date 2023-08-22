@@ -36,7 +36,7 @@
 
       <div class="card">
         <div class="bill-container">
-          <h3>Bill</h3>
+          <h3 class="header1">Bill</h3>
 
           <div class="input-container">
             <i class="fa-solid fa-dollar-sign" id="icon"></i>
@@ -45,39 +45,41 @@
         </div>
 
         <div class="select-container">
-          <h3 class="header" id="tip">Select Tip %</h3>
+          <h3 class="header1">Select Tip %</h3>
           <div class="button-container">
            <button class="button btn-tip" id="five">5%</button>
            <button class="button btn-tip" id="ten">10%</button> 
            <button class="button btn-tip" id="fifteen">15%</button> 
            <button class="button btn-tip" id="twenty-five">25%</button> 
            <button class="button btn-tip" id="fifty">50% </button>
-           <button class="button btn-tip" id="custom">Custom</button>
+           <button class="button custom" id="custom">Custom</button>
         </div>
 
         <div class="customers-container">
-          <h3>Number of People</h3>
+          <h3 class="header1">Number of People</h3>
 
           <div class="input-container">
             <i class="fa-solid fa-user" id="icon"></i>
             <h2>5</h2>
+          </div>
         </div>
 
         <div class="total-container">
-          <div>
-            <h3>Tip Amount</h3>
-            <p>/ person</p>
+          <div class="grid">
+            <div class="total-text">
+              <h3 class="header2">Tip Amount</h3>
+              <p class="subtext">/ person</p>
+            </div>
+            <div class="amount">$4.27</div>
+            <div class="total-text">
+              <h3 class="header2">Total</h3>
+              <p class="subtext">/ person</p>
+            </div>
+            <div class="amount">$32.79</div>
           </div>
-          <div>$$</div>
-          <div>
-            <h3>Total</h3>
-            <p>/ person</p>
-          </div>
-          <div>$$</div>
 
-          <button class="button btn-reset" id="reset">Reset</button>
+          <button class="button btn-reset" id="reset">RESET</button>
         </div>
-      </div>
 
       <div class="attribution">
         Challenge by
@@ -93,5 +95,3 @@
 </html>
 
 <!-- https://www.freecodecamp.org/news/build-and-validate-beautiful-forms-with-vanilla-html-css-js/ -->
-
-<!-- https://www.freecodecamp.org/news/how-to-build-a-dropdown-menu-with-javascript/ -->
