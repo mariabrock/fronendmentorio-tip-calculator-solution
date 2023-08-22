@@ -21,7 +21,8 @@ img {
 
 .card {
   display: grid;
-  grid-template-areas: "bill"
+  grid-template-areas: 
+  "bill"
   "select"
   "customers"
   "total";
@@ -36,10 +37,23 @@ img {
 
 .bill-container {
   grid-area: "bill";
+  margin: 1rem;
+  padding-top: 1rem;
 }
 
 .select-container {
   grid-area: "select";
+  margin: 1rem;
+}
+
+.customers-container {
+  grid-area: "customers";
+  padding: 1rem;
+}
+
+.total-container {
+  grid-area: "total";
+  margin: .5rem;
 }
 
 .button-container {
@@ -50,6 +64,34 @@ img {
   "fifty" "custom";
   grid-template-columns:
   1fr 1fr;
+}
+
+button {
+  font-family: 'Space Mono', monospace;
+  border: none;
+  margin-top: .5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  font-size: large;
+}
+
+.btn-tip {
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+}
+
+.btn-tip:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+.custom {
+  color: hsl(183, 100%, 15%);
 }
 
 .item1 {
@@ -82,12 +124,85 @@ img {
 
 .total-container {
   grid-area: "total";
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.grid {
+  display:  grid;
+  grid-template-areas: 
+  "header" "price"
+  "header" "price";
+  grid-template-columns: 1fr 1fr;
+  row-gap:  10px;
+  column-gap:  10px;
+}
+
+.total-text {
+  grid-area: "header";
+}
+
+.amount {
+  grid-area: "price";
+  color: hsl(172, 67%, 45%);
+  font-size: x-large;
+  padding-left: 5rem;
+}
+
+#icon {
+  width: 100%;
+  padding: 10px;
+  min-width: 40px;
+  color:  hsl(184, 14%, 56%);
+  font-size: medium;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 325px;
+  padding: 10px;
+  background-color: hsl(189, 41%, 97%);
+  border: 0;
+  border-radius: 5px;
+}
+
+h2 {
+  margin: 0;
+  color: hsl(183, 100%, 15%);
+  font-size: x-large;
+}
+
+h3 {
+  margin: 0.25rem;
+}
+
+.header1 {
+  color: hsl(186, 14%, 43%);
+}
+
+.header2 {
+  color: hsl(189, 41%, 97%);
+}
+
+.subtext {
+  color: hsl(184, 14%, 56%);
+  margin: 0;
+}
+
+.btn-reset {
+  background-color: hsl(172, 67%, 45%);
+  width: 300px;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 5rem;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
