@@ -8,52 +8,61 @@ html, body {
 }
 
 .container {
-  row-gap:  25px;
-  justify-items : stretch;
-  align-items: start;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10rem;
+  padding: 0;
+} 
 
 img {
   max-width: 100px;
   padding: 3rem;
-  margin-left: 10rem;
+  margin-left: 55rem;
+  margin-bottom: 2rem;
+  /* make this responsive */
 }
 
 .card {
   display: grid;
   grid-template-areas: 
-  "bill"
-  "select"
-  "customers"
-  "total";
-  grid-template-columns: 1fr;
-  row-gap:  25px;
+  "side-one" "side-two";
+  grid-template-columns: 1fr 1fr;
+  column-gap:  10px;
   justify-items : center;
   align-items: center;
   background-color: hsl(0, 0%, 100%);
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-radius: 20px;
+  padding: 2rem;
+  margin-left: 25rem;
+  max-width: 850px;
+  /*border-top-left-radius: 20px;*/
+  /*border-top-right-radius: 20px;*/
 }
 
 .bill-container {
-  grid-area: "bill";
+  grid-area: "side-one";
   margin: 1rem;
-  padding-top: 1rem;
 }
 
 .select-container {
-  grid-area: "select";
+  grid-area: "side-one";
   margin: 1rem;
+  max-width: 345px;
 }
 
 .customers-container {
-  grid-area: "customers";
+  grid-area: "side-one";
   padding: 1rem;
 }
 
 .total-container {
-  grid-area: "total";
+  grid-area: "side-two";
   margin: .5rem;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 345px;
 }
 
 .button-container {
@@ -120,13 +129,6 @@ button {
 
 .customers-container {
   grid-area: "customers";
-}
-
-.total-container {
-  grid-area: "total";
-  background-color: hsl(183, 100%, 15%);
-  border-radius: 20px;
-  padding: 20px;
 }
 
 .grid {
@@ -206,3 +208,20 @@ h3 {
   color: hsl(228, 45%, 44%);
 }
 
+@media only screen and (max-width: 600px) {
+
+  img {
+    margin-left: 10rem;
+  }
+  
+  .card {
+    display: grid;
+    grid-template-areas: 
+    "bill"
+    "select"
+    "customers" 
+    "total";
+    grid-template-columns: 1fr;
+    row-gap: 25px;
+  }
+}
