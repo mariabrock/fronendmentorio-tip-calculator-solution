@@ -207,6 +207,14 @@ h2 {
     padding: 1rem;
   }
 
+  .total-text {
+    padding: 1rem;
+  }
+
+  .amount {
+    padding-right: 1rem;
+  }
+
   .btn-reset {
     margin-top: 1rem;
   }
